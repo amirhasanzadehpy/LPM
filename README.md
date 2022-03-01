@@ -1,2 +1,2 @@
 # LPM
-simple package manager for javascript 
+simple package manager for javascript ✨
