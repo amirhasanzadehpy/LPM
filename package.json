@@ -1,0 +1,36 @@
+{
+  "name": "lpm",
+  "version": "1.0.0",
+  "description": "simple package manager for javascript",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon dist/cli.js lpm ss1",
+    "start": "concurrently npm:start:*"
+  },
+  "bin": {
+    "lpm": "dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirhasanzadehpy/LPM.git"
+  },
+  "engines": {
+    "node": ">8"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirhasanzadehpy/LPM/issues"
+  },
+  "homepage": "https://github.com/amirhasanzadehpy/LPM#readme",
+  "dependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/yargs": "^17.0.8",
+    "concurrently": "^7.0.0",
+    "find-up": "^4.1.0",
+    "fs-extra": "^10.0.1",
+    "yargs": "^17.3.1"
+  }
+}
